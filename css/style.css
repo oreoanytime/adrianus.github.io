@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV BAR */
+.nav-bg-active {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 7em;
+  z-index: 2;
+}
+
+#nav-wrapper {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 2em;
+  padding-right: 3em;
+}
+
+.nav li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+}
+
+.nav li a:hover {
+  color: white;
+}
+
+/* INTRO CONTAINER */
+#intro-bg-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/intropic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#intro-container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 80%;
+}
+
+.intro-text-container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 600px;
+}
+
+#intro-text {
+  display: flex;
+  align-items: flex-end;
+}
+
+#intro-text h1 {
+  font-size: 6.1em;
+  font-weight: bold;
+}
+
+#intro-text h3 {
+  font-size: 3em;
+}
+
+#intro-text h3 span {
+  transition-duration: 1s;
+}
+
+#intro-text h3 span:hover {
+  color: orange;
+  transform: translateX(20%);
+}
+
+#intro-text h4 {
+  font-size: 2em;
+  color: yellow;
+}
+
+#intro-text h1,
+#intro-text h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.text {
+  color: white;
+  font-size: 100px;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* SKILL CONTAINER */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+.profile-photo img {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -6%;
+    height: 100%;
+    width: auto;
+}
+
+#skill-bg-container {
+  padding: 2em 0 5em;
+}
+
+.skill-container h1, .skill-container h5{
+    text-align: center;
+}
+
+.skill-container h1{
+    text-align: center;
+    padding: 1.5em 0 1em;
+}
+
+.learning-progress {
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+.Python,
+.HTML,
+.CSS,
+.JavaScript {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* HOBBIES */
+#hobbies-bg-container {
+  padding: 2em 0 5em;
+  background-color: black;
+  z-index: -3;
+}
+
+.hobbies-container {
+  color: white;
+}
+
+.carousel-indicators,
+.carousel-caption {
+  color: black;
+}
+
+.carousel {
+  padding-top: 1.5em;
+  z-index: 0;
+}
+
+.carousel-caption {
+  background-color: rgb(250, 249, 246, 0.7);
+}
+
+/* PHOTOGRAPHY */
+/* #photography-bg-container {
+  padding: 2em 0 5em;
+}
+
+img .card-img-top {
+  max-width: 100%;
+}
+
+.col-xs-12,
+.col-sm-12,
+.col-md-6,
+.col-lg-4,
+.col-xl-3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
+
+.photography-container h1{
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.photography-container h5{
+    line-height: 2em;
+    text-align: center;
+}
+
+.section_1_gallery_grid {
+    margin-top: 1em;
+}
+  
+  .w3_section_1_gallery_grid {
+    padding: 0 8px;
+}
+  
+  .section_1_gallery_grid1 {
+    position: relative;
+    background: #edf3f3;
+    padding: 6px;
+}
+
+.proj_gallery_grid1_pos {
+    background: #030605;
+    bottom: 23px;
+    left: 30px;
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    visibility: hidden;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+  
+.proj_gallery_grid1_pos h3 {
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    position: relative;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    text-transform: uppercase;
+}
+  
+.proj_gallery_grid1_pos p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+  
+.section_1_gallery_grid:hover .proj_gallery_grid1_pos {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+}
+
+/*-- /footer --*/
+
+.footer-end-grid h2 {
+    margin-top: 2em;
+}
+  
+.footer-end-grid h2 a {
+    color: #333;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+}
+  
+.footer-end-grid h2 a i {
+    font-size: 0.7em;
+    text-align: center;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    background: #037ef3;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 2;
+}
+  
+.copy-right-w3ls p a {
+    color: #037ef3;
+}
+  
+ul.list-footer li a {
+    color: #888;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+ul.list-footer li a:hover {
+    color: #212529;
+}
+  
+ul.list-footer li {
+    list-style: none;
+    color: #fff;
+}
+  
+ul.social-icons li {
+    list-style: none;
+    margin: 0 1em;
+}
+  
+ul.social-icons li a {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    color: #333;
+    border: 2px solid #333;
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 0.8em;
+}
+  
+ul.social-icons li a:hover {
+    color: #037ef3;
+    border: 2px solid #037ef3;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 500px) {
+  /* NAV BAR */
+  .nav li a {
+    font-size: 1.2em;
+  }
+
+  /* INTRO CONTAINER */
+  #intro-text h1 {
+    font-size: 1.9em;
+    font-weight: bold;
+  }
+  #intro-text h1 span {
+    font-size: 0.9em;
+  }
+
+  #intro-text h3 {
+    font-size: 1.5em;
+  }
+
+  #intro-text h4 {
+    font-size: 1.5em;
+    color: yellow;
+  }
+}
